@@ -1,2 +1,5 @@
 *.pyc
 /env
+/bin
+*~
+.creds
