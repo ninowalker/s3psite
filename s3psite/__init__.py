@@ -98,7 +98,7 @@ def mangle_html(relative, data):
 def fix_path(base, ref):
     path = os.path.normpath(os.path.join(base, ref))
     if mimetypes.guess_type(path)[0].split("/")[0] in ('image', 'video'):
-        path = "/redirect/" + path
+        path = "/redirect" + path
     return path
         
         
